@@ -31,12 +31,6 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: hello-artifact
-
-    - name: Create artifacts directory
-      run: mkdir -p ./artifacts
-
-    - name: Move artifact
-      run: mv hello.txt ./artifacts/hello.txt
-
+        
     - name: Display file content
       run: cat ./artifacts/hello.txt
